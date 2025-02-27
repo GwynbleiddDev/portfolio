@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro Valera - Front-end Developer</title>
+    <link rel="stylesheet" href="/src/css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="text-white font-rajdhani overflow-hidden overflow-y-auto">
+    
+    <div class="scene">
+        <div class="delorean-container">
+            <img src="/assets/bg/delorean.svg" alt="DeLorean" class="delorean">
+        </div>
+        <div class="top">
+            <div class="startails">
+                <div class="startail-r"></div>
+                <div class="startail-l"></div>
+                <div class="startail-m"></div>
+            </div>
+            <div class="top-lines"></div>
+            <div class="sun"></div>
+            <img src="/assets/bg/palm-small.svg" alt="Palm Small" class="palm small">
+            <img src="/assets/bg/palm.svg" alt="Palm" class="palm">
+        </div>
+        <div class="bottom">
+            <div class="m0"></div>
+            <div class="m1"></div>
+            <div class="m2"></div>
+            <div class="bottom-overlay"></div>
+        </div>
+        <div id="stars"></div>
+    </div>
+
+    <div class="nav-toggle shadow-purple-900/90 border-1 border-purple-900">
+        <img src="/assets/index/menu.svg" alt="barra nav" width="23" height="23">
+    </div>
+
+    <nav class="fixed top-0 left-0 w-full bg-gray-950 backdrop-blur-md z-50 shadow-lg shadow-purple-900/50 border-b-1 border-purple-900">
+        
+        <ul class="flex justify-center gap-12 py-4 md:flex-row flex-col items-center">
+            <li><a href="#home" id="nav-home" class="nav-link text-indigo-400 hover:text-indigo-200">Home</a></li>
+            <li><a href="#about" id="nav-about" class="nav-link text-indigo-400 hover:text-indigo-200">About Me</a></li>
+            <li><a href="#skills" id="nav-skills" class="nav-link text-indigo-400 hover:text-indigo-200">Skills</a></li>
+            <li><a href="#journey" id="nav-journey" class="nav-link text-indigo-400 hover:text-indigo-200">My Journey</a></li>
+            <li><a href="#projects" id="nav-projects" class="nav-link text-indigo-400 hover:text-indigo-200">Projects</a></li>
+            <li><a href="#contact" id="nav-contact" class="nav-link text-indigo-400 hover:text-indigo-200">Contact</a></li>
+        </ul>
+
+        <button id="lang-toggle" class="fixed sm:border-1 sm:border-purple-900 sm:rounded-lg sm:top-4 sm:right-6 sm:p-4 md:border-0 md:top-0 md:right-2 lg:right-20 text-xl text-indigo-400 hover:text-indigo-200 transition-colors duration-300">
+            <span class="lang-label">ES</span>
+        </button>
+    </nav>
+
+    <header id="home" class="min-h-screen flex items-center justify-center bg-transparent relative z-10">
+        
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center bg-gray-950/50 rounded-2xl py-4 shadow-purple-900/90 border-1 border-purple-900">
+            
+            <div class="text-center items-center md:text-left px-2 md:px-6">
+                
+                <div class="heading flex justify-center md:mx-4 mb-5 ">
+                    <h1 class="glitch" data-text="ALEJANDRO_VALERA">ALEJANDRO_VALERA</h1>
+                    <h1 class="glow">ALEJANDRO_VALERA</h1>
+                </div>
+                <p class="subtitle text-indigo-400 text-1xl text-center mb-2">FRONT-END DEVELOPER</p>
+            </div>
+
+            <div class="scanlines"></div>
+        </div>
+    </header>
+
+    <section id="about" class="min-h-screen flex justify-start items-center bg-transparent relative z-10">
+        
+        <div class="max-w-6xl p-6 mx-4 md:mx-20 border-1 border-purple-900 flex flex-col md:flex-row items-center gap-8 bg-gray-950 shadow-lg shadow-purple-900/50 rounded-lg" data-aos="fade-right">
+            
+            <div class="md:w-1/3 text-center md:text-left" data-aos="fade-right">
+                <h2 class="text-4xl font-bold text-purple-400 mb-8">About Me</h2>
+                <p class="text-lg text-gray-300">I am a front-end developer in training, passionate about creating modern and responsive interfaces. Through intensive courses, I have mastered languages like JavaScript and TypeScript and technologies like Tailwind, and I am ready to apply them in real projects.</p>
+            </div>
+            
+            <div class="md:w-2/3 w-full flex flex-center mx-auto" data-aos="fade-right" data-aos-delay="200">
+                <svg viewBox="0 0 800 500" class="city-svg text-center" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill="#030712"/>
+                    <circle class="city-sun" cx="400" cy="300" r="270" fill="#FAEFBE"/>
+                    <rect x="0" y="400" width="800" height="200" fill="url(#exampleGradient)" />
+                    <defs>
+                        <radialGradient id="exampleGradient">
+                            <stop offset="30%" stop-color="#030712"/>
+                            <stop offset="99%" stop-color="#030712"/>
+                        </radialGradient>
+                    </defs>
+                    <rect x="0" y="100" width="800" height="5" fill="#030712"/>
+                    <rect x="0" y="140" width="800" height="10" fill="#030712"/>
+                    <rect x="0" y="210" width="800" height="25" fill="#030712"/>
+                    <!-- Carretera -->
+                    <rect x="0" y="450" width="800px" height="25px" fill="#321551"/>
+                    <rect x="14" y="458" width="10px" height="10px" fill="#f5e6c4"/>
+                    <rect x="30" y="458" width="80px" height="10px" fill="#14d3c2"/>
+                    <rect x="140" y="458" width="150px" height="10px" fill="#f5e6c4"/>
+                    <rect x="300" y="458" width="10px" height="10px" fill="#f5e6c4"/>
+                    <rect x="330" y="458" width="90px" height="10px" fill="#14d3c2"/>
+                    <rect x="425" y="458" width="10px" height="10px" fill="#14d3c2"/>
+                    <rect x="440" y="458" width="10px" height="10px" fill="#f5e6c4"/>
+                    <rect x="460" y="458" width="120px" height="10px" fill="#14d3c2"/>
+                    <rect x="520" y="458" width="120px" height="10px" fill="#f5e6c4"/>
+                    <rect x="665" y="458" width="10px" height="10px" fill="#14d3c2"/>
+                    <rect x="680" y="458" width="115px" height="10px" fill="#f5e6c4"/>
+                    <!-- Edificios traseros -->
+                    <rect x="155" y="231" width="70px" height="220px" fill="#321551"/>      
+                    <rect x="185" y="151" width="170px" height="300px" fill="#321551"/>
+                    <rect x="195" y="171" width="85px" height="6px" fill="#544e75"/>    
+                    <rect class="city-lights" x="195" y="191" width="35px" height="6px" fill="#544e75"/>   
+                    <rect x="165" y="251" width="55px" height="6px" fill="#544e75"/>           
+                    <rect class="city-lights" x="205" y="265" width="25px" height="6px" fill="#544e75"/>    
+                    <rect x="15" y="381" width="70px" height="70px" fill="#321551"/> 
+                    <rect x="55" y="351" width="40px" height="100px" fill="#321551"/>  
+                    <rect x="93" y="361" width="60px" height="90px" fill="#321551"/> 
+                    <rect x="690" y="371" width="60px" height="80px" fill="#321551"/> 
+                    <rect x="730" y="391" width="60px" height="59px" fill="#321551"/> 
+                    <rect x="25" y="399" width="55px" height="2px" fill="#14d3c2"/>
+                    <rect class="city-lights" x="65" y="419" width="45px" height="2px" fill="#14d3c2"/> 
+                    <rect x="95" y="378" width="15px" height="2px" fill="#14d3c2"/> 
+                    <rect x="703" y="399" width="35px" height="2px" fill="#14d3c2"/>
+                    <rect x="770" y="409" width="8px" height="2px" fill="#14d3c2"/>
+                    <rect x="773" y="402" width="5px" height="2px" fill="#14d3c2"/>
+                    <rect class="city-lights" x="713" y="429" width="65px" height="2px" fill="#14d3c2"/>
+                    <rect x="95" y="429" width="15px" height="2px" fill="#14d3c2"/> 
+                    <rect x="385" y="111" width="120px" height="340px" fill="#321551"/>
+                    <rect x="397" y="125" width="10px" height="6px" fill="#544e75"/>    
+                    <rect x="417" y="125" width="10px" height="6px" fill="#544e75"/>    
+                    <rect class="city-lights" x="437" y="125" width="10px" height="6px" fill="#544e75"/>    
+                    <rect x="457" y="125" width="10px" height="6px" fill="#544e75"/>    
+                    <rect x="477" y="125" width="10px" height="6px" fill="#544e75"/>    
+                    <rect x="397" y="145" width="10px" height="6px" fill="#544e75"/>    
+                    <rect x="417" y="145" width="10px" height="6px" fill="#544e75"/>    
+                    <rect x="437" y="145" width="10px" height="6px" fill="#544e75"/>    
+                    <rect class="city-lights" x="457" y="145" width="10px" height="6px" fill="#544e75"/>    
+                    <rect x="477" y="145" width="10px" height="6px" fill="#544e75"/> 
+                    <rect x="397" y="165" width="10px" height="6px" fill="#544e75"/>    
+                    <rect x="417" y="165" width="10px" height="6px" fill="#544e75"/>    
+                    <rect x="437" y="165" width="10px" height="6px" fill="#544e75"/>    
+                    <rect x="457" y="165" width="10px" height="6px" fill="#544e75"/>    
+                    <rect x="477" y="165" width="10px" height="6px" fill="#544e75"/> 
+                    <rect x="397" y="185" width="10px" height="6px" fill="#544e75"/>    
+                    <rect x="417" y="185" width="10px" height="6px" fill="#544e75"/>    
+                    <rect x="437" y="185" width="10px" height="6px" fill="#544e75"/>    
+                    <rect x="457" y="185" width="10px" height="6px" fill="#544e75"/>    
+                    <rect x="477" y="185" width="10px" height="6px" fill="#544e75"/> 
+                    <rect x="477" y="205" width="10px" height="6px" fill="#544e75"/> 
+                    <rect x="525" y="151" width="90px" height="300px" fill="#321551"/>
+                    <rect class="city-lights" x="555" y="165" width="45px" height="6px" fill="#544e75"/>  
+                    <rect x="535" y="185" width="25px" height="6px" fill="#544e75"/> 
+                    <rect x="605" y="191" width="40px" height="250px" fill="#321551"/>
+                    <rect x="605" y="225" width="25px" height="6px" fill="#544e75"/> 
+                    <!-- Edificios delanteros -->
+                    <rect x="245" y="191" width="220px" height="260px" fill="#5E40A4"/>
+                    <rect x="120" y="281" width="110px" height="170px" fill="#5E40A4"/>
+                    <rect x="470" y="221" width="110px" height="230px" fill="#5E40A4"/>
+                    <rect x="590" y="251" width="110px" height="200px" fill="#5E40A4"/>
+                    <!-- Luces de edificios -->
+                    <rect x="379" y="191" width="85px" height="260px" fill="#423b66"/>    
+                    <rect x="245" y="211" width="70px" height="8px" fill="#FAEFBE"/>
+                    <rect x="315" y="211" width="150px" height="8px" fill="#281b41"/>
+                    <rect x="245" y="231" width="170px" height="8px" fill="#FAEFBE"/>
+                    <rect x="415" y="231" width="50px" height="8px" fill="#281b41"/>
+                    <rect x="245" y="251" width="40px" height="8px" fill="#281b41"/>
+                    <rect x="285" y="251" width="40px" height="7px" fill="#faefbe"/>
+                    <rect x="315" y="251" width="150px" height="8px" fill="#281b41"/>
+                    <rect x="385" y="251" width="60px" height="7px" fill="#faefbe"/>
+                    <rect x="245" y="271" width="150px" height="8px" fill="#281b41"/>
+                    <rect x="295" y="271" width="60px" height="7px" fill="#faefbe"/>
+                    <rect x="385" y="271" width="20px" height="7px" fill="#faefbe"/>
+                    <rect x="445" y="271" width="20px" height="7px" fill="#faefbe"/>
+                    <rect x="405" y="271" width="50px" height="8px" fill="#281b41"/>
+                    <rect x="215" y="291" width="150px" height="8px" fill="#281b41"/>
+                    <rect x="315" y="291" width="150px" height="7px" fill="#faefbe"/>
+                    <rect x="395" y="291" width="20px" height="8px" fill="#281b41"/>
+                    <rect x="245" y="311" width="150px" height="7px" fill="#faefbe"/>
+                    <rect x="345" y="311" width="60px" height="8px" fill="#281b41"/>
+                    <rect x="405" y="311" width="60px" height="7px" fill="#faefbe"/>
+                    <rect x="245" y="331" width="150px" height="7px" fill="#faefbe"/>
+                    <rect x="305" y="331" width="160px" height="8px" fill="#281b41"/>
+                    <rect x="365" y="331" width="30px" height="7px" fill="#faefbe"/>
+                    <rect x="245" y="351" width="150px" height="8px" fill="#281b41"/>
+                    <rect x="315" y="351" width="150px" height="7px" fill="#faefbe"/>
+                    <rect x="245" y="371" width="30px" height="7px" fill="#faefbe"/>
+                    <rect x="275" y="371" width="90px" height="8px" fill="#281b41"/>
+                    <rect x="365" y="371" width="70px" height="7px" fill="#faefbe"/>
+                    <rect x="435" y="371" width="30px" height="8px" fill="#281b41"/>
+                    <rect x="245" y="391" width="50px" height="8px" fill="#281b41"/>
+                    <rect x="295" y="391" width="120px" height="7px" fill="#faefbe"/>
+                    <rect x="415" y="391" width="20px" height="8px" fill="#281b41"/>
+                    <rect x="435" y="391" width="30px" height="7px" fill="#faefbe"/>
+                    <rect x="245" y="411" width="100px" height="8px" fill="#281b41"/>
+                    <rect x="345" y="411" width="120px" height="7px" fill="#faefbe"/>
+                    <rect x="245" y="431" width="40px" height="8px" fill="#281b41"/>
+                    <rect x="285" y="431" width="180px" height="7px" fill="#faefbe"/>
+                    <!-- Luces edificio 2 -->
+                    <rect x="200" y="281" width="35px" height="170px" fill="#423b66"/>    
+                    <rect x="123" y="291" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect x="123" y="299" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect x="123" y="307" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect x="123" y="314" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect x="123" y="321" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect x="123" y="328" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect x="123" y="336" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect x="123" y="344" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect x="123" y="352" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect x="123" y="360" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect x="123" y="368" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect class="city-lights" x="123" y="376" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect x="123" y="384" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect x="123" y="392" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect x="123" y="400" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect x="123" y="408" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect class="city-lights" x="123" y="416" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect x="123" y="424" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect x="123" y="432" width="105px" height="2px" fill="#C54BB0"/>
+                    <rect x="123" y="440" width="105px" height="2px" fill="#C54BB0"/>
+                    <!-- Luces edificio 3 -->
+                    <rect x="534" y="221" width="45px" height="230px" fill="#423b66"/>    
+                    <rect x="475" y="225" width="5px" height="225px" fill="#faefbe"/>
+                    <rect x="475" y="285" width="6px" height="165px" fill="#3d3154"/>
+                    <rect x="485" y="225" width="5px" height="225px" fill="#faefbe"/>
+                    <rect x="485" y="305" width="5px" height="145px" fill="#3d3154"/>
+                    <rect x="495" y="225" width="5px" height="225px" fill="#faefbe"/>
+                    <rect x="495" y="275" width="6px" height="180px" fill="#3d3154"/>
+                    <rect x="505" y="225" width="5px" height="225px" fill="#faefbe"/>
+                    <rect x="505" y="325" width="5px" height="125px" fill="#3d3154"/>
+                    <rect x="515" y="225" width="5px" height="225px" fill="#faefbe"/>
+                    <rect x="515" y="310" width="6px" height="140px" fill="#3d3154"/>
+                    <rect x="525" y="225" width="5px" height="225px" fill="#faefbe"/>
+                    <rect x="525" y="255" width="6px" height="195px" fill="#3d3154"/>
+                    <rect x="535" y="225" width="5px" height="225px" fill="#faefbe"/>
+                    <rect x="535" y="345" width="5px" height="105px" fill="#3d3154"/>
+                    <rect x="545" y="225" width="5px" height="225px" fill="#faefbe"/>
+                    <rect x="545" y="295" width="5px" height="155px" fill="#3d3154"/>
+                    <rect x="555" y="225" width="5px" height="225px" fill="#faefbe"/>
+                    <rect x="555" y="365" width="5px" height="85px" fill="#3d3154"/>
+                    <rect x="565" y="225" width="5px" height="225px" fill="#faefbe"/>
+                    <rect x="565" y="305" width="5px" height="145px" fill="#3d3154"/>
+                    <rect x="575" y="225" width="3px" height="225px" fill="#faefbe"/>
+                    <rect x="575" y="265" width="3px" height="185px" fill="#3d3154"/>
+                    <!-- Luces edificio 4 -->
+                    <rect x="590" y="251" width="25px" height="200px" fill="#423b66"/>  
+                    <rect x="674" y="251" width="25px" height="200px" fill="#423b66"/>    
+                    <rect x="592" y="261" width="105px" height="3px" fill="#273466"/>
+                    <rect x="592" y="281" width="105px" height="3px" fill="#faefbe"/>
+                    <rect x="592" y="301" width="105px" height="3px" fill="#273466"/>
+                    <rect x="592" y="321" width="105px" height="3px" fill="#273466"/>
+                    <rect class="city-lights" x="592" y="341" width="105px" height="3px" fill="#faefbe"/>
+                    <rect x="592" y="361" width="105px" height="3px" fill="#273466"/>
+                    <rect x="592" y="381" width="105px" height="3px" fill="#faefbe"/>
+                    <rect class="city-lights" x="592" y="401" width="105px" height="3px" fill="#faefbe"/>
+                    <rect x="592" y="421" width="105px" height="3px" fill="#273466"/>
+                    <rect x="592" y="441" width="105px" height="3px" fill="#faefbe"/>
+                    <!-- Estrellas -->
+                    <circle class="city-star" cx="40" cy="100" r="2" fill="#fff"/>
+                    <circle class="city-star" cx="120" cy="150" r="2" fill="#fff"/>
+                    <circle class="city-star" cx="740" cy="60" r="2" fill="#fff"/>
+                    <circle class="city-star" cx="240" cy="40" r="2" fill="#fff"/>
+                    <circle class="city-star" cx="70" cy="240" r="2" fill="#fff"/>
+                    <circle class="city-star" cx="690" cy="140" r="2" fill="#fff"/>
+                    <circle class="city-star" cx="790" cy="240" r="2" fill="#fff"/>
+                </svg> <!--CIUDAD-->
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="min-h-screen flex items-center bg-transparent relative z-10">
+        
+        <div class="max-w-6xl mx-auto text-center bg-gray-950/40 p-6 shadow-lg shadow-purple-900/50 border-1 border-purple-900 rounded-lg" data-aos="fade-up">
+            
+            <h2 class="text-4xl font-bold text-indigo-400 mb-12" data-aos="fade-up">Skills</h2>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-12 mx-8" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-center max-w-25"> <img src="/assets/skills/html-5.svg" alt="html logo"></img> <p>HTML</p></div>
+                <div class="text-center max-w-25"> <img src="/assets/skills/css-3.svg" alt="css logo"></img> <p>CSS</p></div>
+                <div class="text-center max-w-25"> <img src="/assets/skills/js.svg" alt="js logo"></img> <p>JavaScript</p></div>
+                <div class="text-center max-w-25"> <img src="/assets/skills/php.svg" alt="php logo"></img> <p>PHP</p></div>
+                <div class="text-center max-w-25"> <img src="/assets/skills/typescript.svg" alt="typescript logo"> </img> <p>TypeScript</p></div>
+                <div class="text-center max-w-25"> <img src="/assets/skills/sass.svg" alt="sass logo"></img> <p>SASS</p></div>
+                <div class="text-center max-w-25"> <img src="/assets/skills/vue.svg" alt="vue logo"></img> <p>Vue.js</p></div>
+                <div class="text-center max-w-25"> <img src="/assets/skills/react.svg" alt="react logo"></img> <p>React</p></div>
+                <div class="text-center max-w-25"> <img src="/assets/skills/nodejs.svg" alt="node logo"></img> <p>Node.js</p></div>
+                <div class="text-center max-w-25"> <img src="/assets/skills/tailwindcss.svg" alt="tailwindcss logo"></img> <p>Tailwind</p></div>
+                <div class="text-center max-w-25"> <img src="/assets/skills/photoshop.svg" alt="photoshop logo"></img> <p>Photoshop</p></div>
+                <div class="text-center max-w-25"> <img src="/assets/skills/illustrator.svg" alt="illustrator logo"></img> <p>Illustrator</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="journey" class="min-h-screen flex items-center justify-end bg-transparent relative z-10">
+        
+        <div class="max-w-6xl mx-4 md:mx-20 gap-4 md:gap-10 p-4 md:p-10  flex flex-col md:flex-row items-center bg-gray-950 shadow-lg shadow-purple-900/50 rounded-lg border-1 border-purple-900" data-aos="fade-left">
+            
+            <div data-aos="fade-left">
+                <img class="sm:w-full md:w-500 lg:w-1000 rounded-lg" src="/assets/index/journey.gif" alt="journey gif" data-aos="fade-left" data-aos-delay="100">
+            </div>
+            
+            <div class="text-center md:text-right" data-aos="fade-left">
+                <h2 class="text-4xl font-bold text-pink-400 mb-8">My Journey</h2>
+                <p class="text-lg text-gray-300">I completed courses on platforms like Udemy where I learned to build web applications from scratch. I mastered creating responsive websites, languages like PHP and JavaScript, and building databases with MySQL and connecting APIs. Currently, I am exploring React and Vue.js to expand my skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <main id="projects" class="min-h-screen flex items-center p-4 md:p-6 bg-transparent relative z-10">
+        
+        <div class="max-w-6xl sm:mx-6 md:mx-auto p-4 sm:p-6 text-center bg-gray-950/20 shadow-lg border-1 rounded-lg border-purple-900 shadow-purple-900" data-aos="fade-up">
+            
+            <h2 class="text-4xl font-bold text-indigo-400 mb-8" data-aos="fade-up">Projects</h2>
+            
+            <div id="projectGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4" data-aos="fade-up" data-aos-delay="200">
+                
+                <div class="bg-[#0d0d0d] md:max-h-47 border p-8 border-indigo-500/50 rounded-lg row-start-9 row-end-10 sm:row-start-5 sm:row-end-6 md:col-start-3 md:col-end-4 md:row-start-3 md:row-end-4 lg:col-start-1 lg:col-end-3 lg:row-start-3">
+                    
+                    <a class="mx-auto mb-4" href="https://github.com/GwynbleiddDev?tab=repositories"><img class="mx-auto md:w-20 lg:w-20 mb-4" src="/assets/redes/github.svg" alt="logo github"><p id="go-github" class="text-2xl font-semibold text-indigo-300">Github Repositories</p></a>
+                </div>
+                
+                <div class="bg-[#0d0d0d] md:max-h-47 border p-8 border-indigo-500/50 rounded-lg row-start-10 row-end-11 sm:row-start-5 sm:row-end-6 sm:col-start-2 sm:col-end-3 md:col-start-2 md:col-end-3 md:row-start-4 md:row-end-5 lg:col-start-3 lg:col-end-5 lg:row-start-3 ">
+                    
+                    <a class="mx-auto mb-4" href="https://app.netlify.com/teams/ale24vv/sites"><img src="/assets/redes/netlify.svg" class="mx-auto md:w-20 lg:w-20 mb-4" alt="logo netlify"><p id="go-netlify" class="text-2xl font-semibold text-indigo-300">Netlify Deployments</p></a>
+                </div>
+            </div> <!--Proyectos-->
+        </div>
+    </main>
+
+    <section id="contact" class="min-h-screen flex items-center bg-transparent relative z-10">
+        
+        <div class="max-w-4xl mx-auto p-6 text-center bg-gray-950/40 shadow-lg shadow-purple-900/50 rounded-lg border-1 border-purple-900">
+            <h2 class="text-4xl font-bold text-purple-400 mb-12">Contact</h2>
+            
+            <div class="grid grid-cols-2 md:flex justify-center items-end md:p-8 sm:gap-8 md:gap-20 lg:gap-40 md:mb-6" data-aos="fade-up">
+                
+                <a href="https://www.linkedin.com/in/alejandro-valera-80bab42b1" class="w-20 text-xl">
+                    <img class="w-20 mx-auto mt-4 md:mt-auto mb-2 md:mb-4" src="/assets/redes/linkedin.svg" alt="logo linkedin">Linkedin
+                </a>
+                
+                <a href="https://github.com/GwynbleiddDev" class="w-20 text-xl">
+                    <img class="w-20 mx-auto mt-4 md:mt-auto mb-2 md:mb-4" src="/assets/redes/github.svg" alt="logo github">Github
+                </a>
+                
+                <a href="mailto:ale24vv@gmail.com" class="w-20 text-xl">
+                    <img class="w-20 mx-auto mt-4 md:mt-auto mb-2 md:mb-4" src="/assets/redes/gmail.svg" alt="logo gmail">Gmail
+                </a>
+                
+                <a href="https://app.netlify.com/teams/ale24vv/sites" class="w-20 text-xl">
+                    <img class="w-20 mx-auto mt-4 md:mt-auto mb-2 md:mb-4" src="/assets/redes/netlify.svg" alt="logo netlify">Netlify
+                </a> 
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-950 border-t border-purple-900 py-6 text-center text-white z-10 relative neon-up">
+        
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 px-4">
+            <p class="text-gray-300 text-sm md:text-base">© 2025 Alejandro Valera. All rights reserved.</p>
+            
+            <div class="flex flex-col md:flex-row gap-4 items-center">
+                
+                <a href="https://drive.google.com/drive/folders/1xe8sUbS3ZVCWrYPO9ETUzqaDT9aJTtHi?usp=sharing" class="text-indigo-400 hover:text-indigo-200 text-sm md:text-base transition-colors duration-300 flex items-center gap-2">
+                    <svg class="w-6 md:w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM244.7 395.3l-112-112c-4.6-4.6-5.9-11.5-3.5-17.4s8.3-9.9 14.8-9.9l64 0 0-96c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 96 64 0c6.5 0 12.3 3.9 14.8 9.9s1.1 12.9-3.5 17.4l-112 112c-6.2 6.2-16.4 6.2-22.6 0z"/></svg>
+                    Download my CV (PDF)
+                </a>
+                
+                <span class="text-gray-400 text-xs md:text-sm italic">Powered by retro-futuristic vibes</span>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="module" src="/src/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</body>
+</html>
