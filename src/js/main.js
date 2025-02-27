@@ -120,7 +120,7 @@ function updateLanguage(lang) {
 
     document.querySelector('#contact h2').textContent = langs[lang].contact.title;
 
-    document.querySelector('footer a').textContent = langs[lang].footer.cv;
+    document.querySelector('#text-cv').textContent = langs[lang].footer.cv;
 }
 
 
