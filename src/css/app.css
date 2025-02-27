@@ -35,6 +35,10 @@ section, header {
     width: 100%;
 }
 
+header#home, section, main {
+    overflow-x: hidden;
+}
+
 .nav-link {
     transition: color 0.3s ease;
 }
