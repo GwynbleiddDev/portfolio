@@ -41,8 +41,8 @@
 
     <nav class="fixed top-0 left-0 w-full bg-gray-950 backdrop-blur-md z-50 shadow-lg shadow-purple-900/50 border-b-1 border-purple-900">
         
-        <ul class="flex justify-center gap-12 py-4 md:flex-row flex-col items-center">
-            <li><a href="#home" id="nav-home" class="nav-link text-indigo-400 hover:text-indigo-200">Home</a></li>
+        <ul class="flex justify-center text-center gap-8 md:gap-0 py-4 md:py-0 md:flex-row flex-col items-center">
+            <li class="active"><a href="#home" id="nav-home" class="nav-link text-indigo-400 hover:text-indigo-200">Home</a></li>
             <li><a href="#about" id="nav-about" class="nav-link text-indigo-400 hover:text-indigo-200">About Me</a></li>
             <li><a href="#skills" id="nav-skills" class="nav-link text-indigo-400 hover:text-indigo-200">Skills</a></li>
             <li><a href="#journey" id="nav-journey" class="nav-link text-indigo-400 hover:text-indigo-200">My Journey</a></li>
@@ -50,7 +50,7 @@
             <li><a href="#contact" id="nav-contact" class="nav-link text-indigo-400 hover:text-indigo-200">Contact</a></li>
         </ul>
 
-        <button id="lang-toggle" class="fixed border-1 border-purple-900 rounded-lg top-4 right-6 p-4 md:border-0 md:top-0 md:right-2 lg:right-20 font-bold text-xl text-indigo-400 hover:text-indigo-200 transition-colors duration-300">
+        <button id="lang-toggle" class="fixed border-1 border-purple-900 rounded-lg top-4 right-6 p-4 md:top-0 md:right-2 lg:right-6 md:border-0 font-bold text-xl text-indigo-400 hover:text-indigo-200 transition-colors duration-300">
             <span class="lang-label">ES</span>
         </button>
     </nav>
@@ -74,7 +74,7 @@
 
     <section id="about" class="min-h-screen flex justify-start items-center bg-transparent relative z-10">
         
-        <div class="max-w-6xl p-6 mx-4 md:mx-20 border-1 border-purple-900 flex flex-col md:flex-row items-center gap-8 bg-gray-950 shadow-lg shadow-purple-900/50 rounded-lg" data-aos="fade-right">
+        <div class="max-w-6xl p-6 mx-6 md:mx-20 border-1 border-purple-900 flex flex-col md:flex-row items-center gap-8 bg-gray-950 shadow-lg shadow-purple-900/50 rounded-lg" data-aos="fade-right">
             
             <div class="md:w-1/3 text-center md:text-left" data-aos="fade-right">
                 <h2 class="text-4xl font-bold text-purple-400 mb-8">About Me</h2>
@@ -295,7 +295,7 @@
 
     <section id="journey" class="min-h-screen flex items-center justify-end bg-transparent relative z-10">
         
-        <div class="max-w-6xl mx-4 md:mx-20 gap-4 md:gap-10 p-4 md:p-10  flex flex-col md:flex-row items-center bg-gray-950 shadow-lg shadow-purple-900/50 rounded-lg border-1 border-purple-900" data-aos="fade-left">
+        <div class="max-w-6xl mx-6 md:mx-20 gap-4 md:gap-10 p-4 md:p-10 flex flex-col md:flex-row items-center bg-gray-950 shadow-lg shadow-purple-900/50 rounded-lg border-1 border-purple-900" data-aos="fade-left">
             
             <div data-aos="fade-left">
                 <img class="sm:w-full md:w-500 lg:w-1000 rounded-lg" src="/assets/index/journey.gif" alt="journey gif" data-aos="fade-left" data-aos-delay="100">
@@ -308,20 +308,20 @@
         </div>
     </section>
 
-    <main id="projects" class="min-h-screen flex items-center p-4 md:p-6 bg-transparent relative z-10">
+    <main id="projects" class="min-h-screen overflow-hidden flex items-center p-4 md:p-6 bg-transparent relative z-10">
         
-        <div class="max-w-6xl sm:mx-6 md:mx-auto p-4 sm:p-6 text-center bg-gray-950/20 shadow-lg border-1 rounded-lg border-purple-900 shadow-purple-900" data-aos="fade-up">
+        <div class="max-w-6xl mx-6 md:mx-auto p-10 md:p-4 text-center bg-gray-950/20 shadow-lg border-1 rounded-lg border-purple-900 shadow-purple-900" data-aos="fade-up">
             
             <h2 class="text-4xl font-bold text-indigo-400 mb-8" data-aos="fade-up">Projects</h2>
             
-            <div id="projectGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4" data-aos="fade-up" data-aos-delay="200">
+            <div id="projectGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6" data-aos="fade-up" data-aos-delay="200">
                 
-                <div class="bg-[#0d0d0d] md:max-h-47 border p-8 border-indigo-500/50 rounded-lg row-start-9 row-end-10 sm:row-start-5 sm:row-end-6 md:col-start-3 md:col-end-4 md:row-start-3 md:row-end-4 lg:col-start-1 lg:col-end-3 lg:row-start-3">
+                <div class="bg-[#0d0d0d] md:max-h-47 border p-8 border-indigo-500/50 rounded-lg row-start-9 row-end-10 sm:row-start-5 sm:row-end-6 md:col-start-3 md:col-end-4 md:row-start-3 md:row-end-4 lg:col-start-1 lg:col-end-3 lg:row-start-3" data-aos="fade-up">
                     
                     <a class="mx-auto mb-4" href="https://github.com/GwynbleiddDev?tab=repositories"><img class="mx-auto md:w-20 lg:w-20 mb-4" src="/assets/redes/github.svg" alt="logo github"><p id="go-github" class="text-2xl font-semibold text-indigo-300">Github Repositories</p></a>
                 </div>
                 
-                <div class="bg-[#0d0d0d] md:max-h-47 border p-8 border-indigo-500/50 rounded-lg row-start-10 row-end-11 sm:row-start-5 sm:row-end-6 sm:col-start-2 sm:col-end-3 md:col-start-2 md:col-end-3 md:row-start-4 md:row-end-5 lg:col-start-3 lg:col-end-5 lg:row-start-3 ">
+                <div class="bg-[#0d0d0d] md:max-h-47 border p-8 border-indigo-500/50 rounded-lg row-start-10 row-end-11 sm:row-start-5 sm:row-end-6 sm:col-start-2 sm:col-end-3 md:col-start-2 md:col-end-3 md:row-start-4 md:row-end-5 lg:col-start-3 lg:col-end-5 lg:row-start-3" data-aos="fade-up">
                     
                     <a class="mx-auto mb-4" href="https://app.netlify.com/teams/ale24vv/sites"><img src="/assets/redes/netlify.svg" class="mx-auto md:w-20 lg:w-20 mb-4" alt="logo netlify"><p id="go-netlify" class="text-2xl font-semibold text-indigo-300">Netlify Deployments</p></a>
                 </div>

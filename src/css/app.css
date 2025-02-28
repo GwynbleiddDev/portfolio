@@ -43,6 +43,33 @@ header#home, section, main {
     transition: color 0.3s ease;
 }
 
+li.active {
+    background-color: #ffffff;
+}
+
+li.active .nav-link {
+    color: #0c1839;
+    pointer-events: none;
+    cursor: default; 
+}
+
+li {
+    padding: 1rem 3rem;
+    transition: background-color 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    li {
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media (min-width: 960px) {
+    li {
+        padding: 1rem 3rem;
+    }
+}
+
 .proyecto-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -93,7 +120,7 @@ nav {
     background: #030712;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     nav {
         transform: translateX(-100%);
         width: 40%;
