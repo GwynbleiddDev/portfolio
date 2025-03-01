@@ -44,29 +44,30 @@ header#home, section, main {
 }
 
 li.active {
-    background-color: #ffffff;
+    background-color: #001f74;
 }
 
 li.active .nav-link {
-    color: #0c1839;
+    color: #c5d5ff;
     pointer-events: none;
     cursor: default; 
 }
 
 li {
-    padding: 1rem 3rem;
+    padding: .4rem 15%;
     transition: background-color 0.3s ease;
+    border-radius: .5rem ;
 }
 
 @media (min-width: 768px) {
     li {
-        padding: 1rem 1.5rem;
+        padding: 1rem 1rem;
     }
 }
 
 @media (min-width: 960px) {
     li {
-        padding: 1rem 3rem;
+        padding: .5rem 2.6rem;
     }
 }
 
@@ -123,7 +124,7 @@ nav {
 @media (max-width: 767px) {
     nav {
         transform: translateX(-100%);
-        width: 40%;
+        width: 12rem;
         height: 100vh;
         border-right: 1px solid #9333ea;
         transition: transform 0.3s ease; /* Solo tlf */
