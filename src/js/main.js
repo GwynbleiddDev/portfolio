@@ -3,7 +3,7 @@ import { cargarProyectos } from './projects-loader.js';
 import { initializeStars } from './stars.js';
 import { setupNav } from './nav.js';
 import { adjustSceneHeight, resetNavStyles } from './footer.js';
-import { updateLanguage } from './lang-switcher.js';
+import { updateLanguage, currentLang } from './lang-switcher.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -32,6 +32,6 @@ window.addEventListener('resize', () => {
 // Cambio de idioma
 const langToggle = document.querySelector('#lang-toggle');
 langToggle.addEventListener('click', () => {
-    const newLang = updateLanguage.currentLang === 'en' ? 'es' : 'en';
+    const newLang = currentLang === 'en' ? 'es' : 'en';
     updateLanguage(newLang);
 });
