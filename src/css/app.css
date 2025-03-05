@@ -61,7 +61,7 @@ li {
 
 @media (min-width: 768px) {
     li {
-        padding: 1rem 1rem;
+        padding: .5rem 1rem;
     }
 }
 
@@ -148,6 +148,7 @@ nav {
 @media (min-width: 768px) {
     .nav-toggle {
         display: none;
+        top: -2;
     }
 }
 

@@ -226,39 +226,56 @@
 }
 
 .palm.small {
-    width: 0;
-    height: 0;
-    animation: none;
+    position: absolute;
+    bottom: -2%;
+    right: 20%;
+    width: 19rem;
+    height: 19rem;
+    animation: small-palm-shaking 6s ease-in-out infinite;
+}
+
+@media (min-width: 560px) {
+    .palm.small {
+        right: 25%;
+    } 
 }
 
 @media (min-width: 768px) {
     .palm.small {
-        position: absolute;
-        bottom: -2%;
+        right: 30%;
+    }
+}
+
+@media (min-width: 990px) {
+    .palm.small {
         right: 40%;
-        width: 19rem;
-        height: 19rem;
-        animation: small-palm-shaking 6s ease-in-out infinite;
     }
 }
 
 .palm:not(.small) {
     position: absolute;
     bottom: 0%;
-    right: 39%;
+    right: 20%;
     width: 9rem;
     height: 15rem;
     animation: palm-shaking 5s ease-in-out infinite;
 }
 
+@media (min-width: 560px) {
+    .palm:not(.small) {
+        right: 30%;
+    } 
+}
+
 @media (min-width: 768px) {
     .palm:not(.small) {
-        position: absolute;
-        bottom: 0%;
-        right: 43%;
-        width: 9rem;
-        height: 15rem;
-        animation: palm-shaking 5s ease-in-out infinite;
+        right: 35%;
+    } 
+}
+
+@media (min-width: 990px) {
+    .palm:not(.small) {
+        right: 42%;
     } 
 }
 
